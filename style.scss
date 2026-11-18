@@ -579,6 +579,183 @@ footer {
 }
 
 .section_testimonies {
-    
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+
+    .testimony_cards > .card:nth-child(2) {
+        display: none;
+    }
+
+    .testimony_cards > .card:nth-child(3) {
+        display: none;
+    }
+
+    img {
+        justify-content: center;
+    }
+
+    .card_footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .social_media {
+        display: flex;
+        gap: 10px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 351px;
+        text-align: center;
+        height: 384px;
+
+
+        .card_footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        
+    }
 }
 
+.carousel_dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 24px;
+
+    .carousel_dot {
+        width: 8px;
+        height: 8px;
+        background-color: #F3F3F3;
+        border-radius: 50%;
+
+        &:nth-child(2) {
+            background-color: black;
+        }
+    }
+}
+
+.sign_up {
+    .sign_up_text {
+
+        p{
+
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.1px;
+            text-align: center;
+
+        }
+
+        h1 {
+
+            font-weight: 900;
+            font-size: 30px;
+            line-height: 48px;
+            letter-spacing: -0.5px;
+            text-align: center;
+
+        }
+
+    }
+
+    button {
+
+        width: 84px;
+        height: 40px;
+        padding-top: 6px;
+        padding-right: 16px;
+        padding-bottom: 6px;
+        padding-left: 16px;
+        border-radius: 24px;
+        border: none;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        text-align: center;
+        vertical-align: middle;
+
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    h1 {
+
+        display: flex;
+
+    }
+
+    .footer_columns {
+
+        display: flex;
+        width: 315px;
+        height: auto;
+
+    }
+
+    p {
+        display: flex;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+
+    }
+
+    .column_title {
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        text-align: center;
+        text-align: center;
+
+    }
+
+    .Subscribe {
+
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+
+        
+        p{
+
+            display: flex;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.1px;
+
+        }
+
+        label {
+
+            background-color: black;
+            
+
+        }
+        
+    }
+
+}
