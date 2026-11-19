@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.test {
+  margin: 0 auto;
+  width: 1440px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -57,6 +66,7 @@ nav a {
 
 .intro_section_2 {
   display: flex;
+  align-items: center;
 }
 .intro_section_2 button {
   background-color: black;
@@ -573,7 +583,7 @@ footer a {
     text-align: center;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   header .mobile-menu {
     display: none;
   }
