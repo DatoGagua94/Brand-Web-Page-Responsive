@@ -22,6 +22,7 @@ header {
     padding-right: 24px;
     padding-bottom: 12px;
     padding-left: 24px;
+    border: none;
     cursor: pointer;
   }
 }
@@ -72,6 +73,7 @@ nav {
     padding-right: 24px;
     padding-bottom: 12px;
     padding-left: 24px;
+    border: none;
     cursor: pointer;
   }
 
@@ -280,10 +282,11 @@ nav {
       padding-bottom: 6px;
       padding-left: 16px;
       gap: 10px;
+      border: none;
+      cursor: pointer;
     }
   }
 }
-
 
 footer {
   display: flex;
@@ -354,6 +357,7 @@ footer {
     height: 24px;
     width: 24px;
     border-radius: 100px;
+    border: none;
     cursor: pointer;
 
     img {
@@ -435,17 +439,12 @@ footer {
       height: 60px;
       width: 120px;
       font-size: 18px;
+      border: none;
     }
 
     p {
       font-size: 20px;
     }
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    padding: 10px;
   }
 
   .features {
@@ -529,16 +528,13 @@ footer {
     }
 
     .card {
+      margin-top: 50px;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       width: 351px;
       text-align: center;
       height: 384px;
-    }
-
-    .card_footer {
-      display: flex;
-      justify-content: center;
     }
   }
 
@@ -592,6 +588,7 @@ footer {
     letter-spacing: 0.1px;
     text-align: center;
     vertical-align: middle;
+    border: none;
   }
 
   footer {
@@ -644,6 +641,15 @@ footer {
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 0.1px;
+    }
+
+    button {
+      display: flex;
+    }
+
+    label {
+      padding-bottom: 40px;
+      text-align: center;
     }
   }
 }
