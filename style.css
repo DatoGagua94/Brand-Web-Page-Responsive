@@ -8,17 +8,17 @@ html {
   scroll-behavior: smooth;
 }
 
-.test {
+.website-width {
   margin: 0 auto;
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-inline: 32px;
-  margin-top: 34px;
+  padding-top: 35px;
 }
 header button {
   background-color: black;
@@ -498,21 +498,21 @@ footer a {
   .carousel_dots .carousel_dot:nth-child(2) {
     background-color: black;
   }
-  p {
+  .sign_up .sign_up_text p {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.1px;
     text-align: center;
   }
-  h1 {
+  .sign_up .sign_up_text h1 {
     font-weight: 900;
     font-size: 30px;
     line-height: 48px;
     letter-spacing: -0.5px;
     text-align: center;
   }
-  button {
+  .sign_up .sign_up_text button {
     width: 84px;
     height: 40px;
     padding-top: 6px;
@@ -583,8 +583,156 @@ footer a {
     text-align: center;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 376px) and (max-width: 768px) {
+  header {
+    padding-inline: 24px;
+  }
   header .mobile-menu {
     display: none;
+  }
+  .intro-container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .intro-container2 .intro_section_2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  .features {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .features .testimony_cards {
+    width: 340px;
+    height: 356px;
+    gap: 56px;
+    border-radius: 8px;
+    padding: 24px;
+  }
+  .features .feature_heading {
+    display: flex;
+    justify-content: center;
+  }
+  .dark_section {
+    padding-bottom: 40px;
+  }
+  .dark_section h1 {
+    width: 696px;
+    height: 64px;
+    gap: 16px;
+    text-align: center;
+  }
+  .dark_section p {
+    width: 696px;
+    height: 48px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .dark_section li {
+    width: 680px;
+    height: 24px;
+    text-align: center;
+  }
+  .dark_section .dark_section_flex_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .dark_section .dark_section_flex_container img {
+    width: 696px;
+    height: 550px;
+    gap: 10px;
+    padding: 10px;
+  }
+  .section_testimonies {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .section_testimonies .carousel_dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 24px;
+  }
+  .section_testimonies .carousel_dots .carousel_dot {
+    margin-top: 25px;
+    width: 8px;
+    height: 8px;
+    background-color: #f3f3f3;
+    border-radius: 50%;
+  }
+  .section_testimonies .carousel_dots .carousel_dot:nth-child(2) {
+    background-color: black;
+  }
+  .section_testimonies .testimony_cards > .card:nth-child(3) {
+    display: none;
+  }
+  .section_testimonies .card_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .section_testimonies .social_media {
+    display: flex;
+    gap: 10px;
+  }
+  .section_testimonies .card {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 351px;
+    text-align: center;
+    height: 384px;
+  }
+  .sign_up .sign_up_text p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    text-align: center;
+  }
+  .sign_up .sign_up_text h1 {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    text-align: center;
+  }
+  .sign_up .sign_up_text button {
+    width: 84px;
+    height: 40px;
+    padding-top: 6px;
+    padding-right: 16px;
+    padding-bottom: 6px;
+    padding-left: 16px;
+    gap: 10px;
+    border-radius: 24px;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 40px 24px;
+    height: auto;
+  }
+  footer h1 {
+    grid-column: 1;
+    grid-row: 1;
+    padding-bottom: 30px;
+  }
+  footer .footer_columns {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  footer .Subscribe {
+    grid-column: 2;
+    grid-row: 1/3;
   }
 }/*# sourceMappingURL=style.css.map */
