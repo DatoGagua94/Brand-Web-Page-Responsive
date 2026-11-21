@@ -735,4 +735,9 @@ footer a {
     grid-column: 2;
     grid-row: 1/3;
   }
+}
+@media (min-width: 1440px) {
+  .mobile-menu {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
